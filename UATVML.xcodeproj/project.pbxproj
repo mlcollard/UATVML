@@ -10,6 +10,8 @@
 		88C963562090F6BA00926B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C963552090F6BA00926B7D /* AppDelegate.swift */; };
 		88C963592090F6BC00926B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C963582090F6BC00926B7D /* Assets.xcassets */; };
 		88F54633209788FE00E0AABA /* HelloWorld.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88F54632209788FE00E0AABA /* HelloWorld.xml */; };
+		88F5463520978AB800E0AABA /* NextPage.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88F5463420978AB800E0AABA /* NextPage.xml */; };
+		88F5463720978AF300E0AABA /* PageNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88F5463620978AF300E0AABA /* PageNavigation.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		88C963582090F6BC00926B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C9635A2090F6BC00926B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88F54632209788FE00E0AABA /* HelloWorld.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = HelloWorld.xml; path = templates/HelloWorld.xml; sourceTree = "<group>"; };
+		88F5463420978AB800E0AABA /* NextPage.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = NextPage.xml; path = templates/NextPage.xml; sourceTree = "<group>"; };
+		88F5463620978AF300E0AABA /* PageNavigation.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PageNavigation.xml; path = templates/PageNavigation.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				88C963552090F6BA00926B7D /* AppDelegate.swift */,
 				88C963572090F6BA00926B7D /* application.js */,
+				88F5463420978AB800E0AABA /* NextPage.xml */,
+				88F5463620978AF300E0AABA /* PageNavigation.xml */,
 				88F54632209788FE00E0AABA /* HelloWorld.xml */,
 				88C963582090F6BC00926B7D /* Assets.xcassets */,
 				88C9635A2090F6BC00926B7D /* Info.plist */,
@@ -119,6 +125,8 @@
 			files = (
 				88C963592090F6BC00926B7D /* Assets.xcassets in Resources */,
 				88F54633209788FE00E0AABA /* HelloWorld.xml in Resources */,
+				88F5463720978AF300E0AABA /* PageNavigation.xml in Resources */,
+				88F5463520978AB800E0AABA /* NextPage.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

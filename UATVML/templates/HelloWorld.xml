@@ -1,0 +1,5 @@
+    <document>
+        <loadingTemplate>
+            <activityIndicator><text>Hello World Yet Again!</text></activityIndicator>
+        </loadingTemplate>
+    </document>
