@@ -37,7 +37,7 @@ function getDocument(url) {
     var templateXHR = new XMLHttpRequest();
     templateXHR.responseType = "document";
     templateXHR.addEventListener("load", function() { pushDoc(templateXHR.responseXML);}, false);
-    templateXHR.open("GET", url, true);
+    templateXHR.open("GET", baseURL + url, true);
     templateXHR.send();
 }
 
@@ -65,7 +65,7 @@ App.onLaunch = function(options) {
     loadingDoc();
 
     // URL of template to load
-    var templateURL = baseURL + "template/HelloWorld.xml"
+    var templateURL = "templates/PageNavigation.xml"
     
     // load template at URL
     getDocument(templateURL)
