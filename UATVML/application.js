@@ -31,8 +31,18 @@
  * the URL that was used to retrieve the application JavaScript.
  */
 App.onLaunch = function(options) {
-    var alert = createAlert("Hello World!", "Welcome to tvOS");
-    navigationDocument.pushDocument(alert);
+
+    var template = `
+    <document>
+        <loadingTemplate>
+            <activityIndicator><text>Hello World Yet Again!</text></activityIndicator>
+        </loadingTemplate>
+    </document>
+    `;
+    var templateParser = new DOMParser();
+    var parsedTemplate = templateParser.parseFromString(template, "application/xml");
+
+    navigationDocument.pushDocument(parsedTemplate);
 }
 
 
