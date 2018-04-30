@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		88C963562090F6BA00926B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C963552090F6BA00926B7D /* AppDelegate.swift */; };
 		88C963592090F6BC00926B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C963582090F6BC00926B7D /* Assets.xcassets */; };
+		88F54633209788FE00E0AABA /* HelloWorld.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88F54632209788FE00E0AABA /* HelloWorld.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		88C963572090F6BA00926B7D /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 		88C963582090F6BC00926B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C9635A2090F6BC00926B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F54632209788FE00E0AABA /* HelloWorld.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = HelloWorld.xml; path = templates/HelloWorld.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			children = (
 				88C963552090F6BA00926B7D /* AppDelegate.swift */,
 				88C963572090F6BA00926B7D /* application.js */,
+				88F54632209788FE00E0AABA /* HelloWorld.xml */,
 				88C963582090F6BC00926B7D /* Assets.xcassets */,
 				88C9635A2090F6BC00926B7D /* Info.plist */,
 			);
@@ -115,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C963592090F6BC00926B7D /* Assets.xcassets in Resources */,
+				88F54633209788FE00E0AABA /* HelloWorld.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

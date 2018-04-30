@@ -30,12 +30,26 @@
  * The location attribute is automatically added to the object and represents 
  * the URL that was used to retrieve the application JavaScript.
  */
-App.onLaunch = function(options) {
 
+var baseURL = "http://localhost:9001/"
+
+function getDocument(url) {
+    var templateXHR = new XMLHttpRequest();
+    templateXHR.responseType = "document";
+    templateXHR.addEventListener("load", function() { pushDoc(templateXHR.responseXML);}, false);
+    templateXHR.open("GET", url, true);
+    templateXHR.send();
+}
+
+function pushDoc(document) {
+    navigationDocument.pushDocument(document)
+}
+
+function loadingDoc() {
     var template = `
     <document>
         <loadingTemplate>
-            <activityIndicator><text>Hello World Yet Again!</text></activityIndicator>
+            <activityIndicator><text>Loading</text></activityIndicator>
         </loadingTemplate>
     </document>
     `;
@@ -45,6 +59,17 @@ App.onLaunch = function(options) {
     navigationDocument.pushDocument(parsedTemplate);
 }
 
+App.onLaunch = function(options) {
+
+    // initial loading document (screensaver)
+    loadingDoc();
+
+    // URL of template to load
+    var templateURL = baseURL + "template/HelloWorld.xml"
+    
+    // load template at URL
+    getDocument(templateURL)
+}
 
 App.onWillResignActive = function() {
 
